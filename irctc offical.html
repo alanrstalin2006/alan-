@@ -1,0 +1,631 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IRCTC Train Booking | Book Train Tickets Online | Indian Railways</title>
+  <meta name="description" content="Book train tickets online with IRCTC mobile app. Search trains, check live station status, and view route maps for Kerala Express services including Ernad Express, Venad Express and more.">
+  <meta name="keywords" content="IRCTC, train booking, Indian Railways, Kerala Express, Ernad Express, train tickets, railway reservation">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="IRCTC Train Booking | Book Train Tickets Online">
+  <meta property="og:description" content="Book train tickets online with IRCTC mobile app. Search trains, check live station status, and view route maps for Kerala Express services.">
+  
+  <script type="module" async src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Firctctrai3153back.builtwithrocket.new&_be=https%3A%2F%2Fappanalytics.rocket.new&_v=0.1.13"></script>
+  <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.2"></script>
+  </head>
+<body>
+  <main class="app-container">
+    <div class="mobile-screens-container">
+      <!-- Left Screen - Booking Interface -->
+      <section class="booking-screen">
+        <header class="app-header">
+          <button class="menu-btn" aria-label="Menu">
+            <img src="../assets/images/img_menu.png" alt="Menu" width="30" height="30">
+          </button>
+          <h1 class="app-title">IRCTC Train booking</h1>
+          <button class="more-options-btn" aria-label="More options">
+            <img src="../assets/images/img_menu_vertical.png" alt="More options" width="20" height="20">
+          </button>
+        </header>
+
+        <div class="booking-form-container">
+          <div class="route-selection">
+            <div class="route-indicators">
+              <div class="route-dot active"></div>
+              <div class="route-line"></div>
+              <div class="route-dot"></div>
+            </div>
+            
+            <div class="stations-container">
+              <div class="station-row">
+                <div class="station-info">
+                  <button class="station-code">SRR</button>
+                  <span class="station-name">Shoranur Junction</span>
+                </div>
+                <button class="close-btn" aria-label="Remove station">
+                  <img src="../assets/images/img_close.png" alt="Close" width="20" height="20">
+                </button>
+              </div>
+              
+              <div class="route-divider"></div>
+              
+              <div class="station-row">
+                <div class="station-info">
+                  <span class="station-code-text">AWY</span>
+                  <span class="station-name">Aluva</span>
+                </div>
+                <button class="close-btn" aria-label="Remove station">
+                  <img src="../assets/images/img_close.png" alt="Close" width="20" height="20">
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <button class="find-trains-btn">Find Trains</button>
+        </div>
+
+        <div class="search-sections">
+          <div class="search-section">
+            <div class="section-header">
+              <span class="section-label">Spot Train</span>
+            </div>
+            <div class="search-input-container">
+              <div class="input-content">
+                <img src="../assets/images/img_train.png" alt="Train" width="20" height="20">
+                <input type="text" placeholder="Train No. / Train Name" class="search-input">
+              </div>
+              <button class="search-btn" aria-label="Search trains">
+                <img src="../assets/images/img_search.png" alt="Search" width="20" height="20">
+              </button>
+            </div>
+          </div>
+
+          <div class="search-section">
+            <div class="section-header">
+              <span class="section-label">Live Station</span>
+            </div>
+            <div class="search-input-container">
+              <div class="input-content">
+                <img src="../assets/images/img_location.png" alt="Location" width="20" height="20">
+                <input type="text" placeholder="Station Code / Name" class="search-input">
+              </div>
+              <button class="search-btn" aria-label="Search stations">
+                <img src="../assets/images/img_search.png" alt="Search" width="20" height="20">
+              </button>
+            </div>
+          </div>
+
+          <div class="recent-searches">
+            <div class="section-header">
+              <span class="section-label">Recent Searches</span>
+            </div>
+            
+            <div class="recent-item">
+              <span class="recent-text">Venad Express</span>
+              <button class="next-btn" aria-label="View details">
+                <img src="../assets/images/img_next_page.png" alt="Next" width="20" height="20">
+              </button>
+            </div>
+            
+            <div class="recent-item">
+              <span class="recent-text">Ernad Express</span>
+              <button class="next-btn" aria-label="View details">
+                <img src="../assets/images/img_next_page.png" alt="Next" width="20" height="20">
+              </button>
+            </div>
+            
+            <div class="recent-item">
+              <span class="recent-text">Sabari Express</span>
+              <button class="next-btn" aria-label="View details">
+                <img src="../assets/images/img_next_page.png" alt="Next" width="20" height="20">
+              </button>
+            </div>
+            
+            <div class="recent-item">
+              <span class="recent-text">Kozhikode Jan Shadabdi Express</span>
+              <button class="next-btn" aria-label="View details">
+                <img src="../assets/images/img_next_page.png" alt="Next" width="20" height="20">
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right Screen - Route Visualization -->
+      <section class="route-screen">
+        <header class="app-header">
+          <button class="back-btn" aria-label="Go back">
+            <img src="../assets/images/img_next_page_30x30.png" alt="Back" width="30" height="30">
+          </button>
+          <h2 class="route-title">Ernad Express</h2>
+          <button class="more-options-btn" aria-label="More options">
+            <img src="../assets/images/img_menu_vertical.png" alt="More options" width="20" height="20">
+          </button>
+        </header>
+
+        <div class="route-map-container">
+          <div class="map-background">
+            <img src="../assets/images/img_kerala_1.png" alt="Kerala map showing train route" class="kerala-map">
+            
+            <div class="route-overlay">
+              <img src="../assets/images/img_lines.png" alt="Train route lines" class="route-lines">
+              
+              <div class="station-markers">
+                <div class="station-marker shoranur">
+                  <div class="marker-dot"></div>
+                  <span class="marker-label">Shoranur</span>
+                </div>
+                
+                <div class="station-marker thrissur">
+                  <span class="marker-label">Thrissur</span>
+                  <div class="marker-dot"></div>
+                </div>
+                
+                <div class="station-marker chalakkudy">
+                  <div class="marker-dot"></div>
+                  <span class="marker-label">Chalakkudy</span>
+                </div>
+                
+                <div class="station-marker aluva">
+                  <span class="marker-label">Aluva</span>
+                  <div class="marker-dot"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(180deg, #20608e 0%, #435585 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 16px;
+    }
+
+    /* Layout components */
+    .app-container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .mobile-screens-container {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 100%;
+    }
+
+    .booking-screen,
+    .route-screen {
+      background-color: #232d3f;
+      border-radius: 46px;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .app-header {
+      background-color: #435585;
+      padding: 28px 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      box-shadow: 0px 4px 59px rgba(0, 0, 0, 0.25);
+    }
+
+    .menu-btn,
+    .back-btn,
+    .more-options-btn,
+    .close-btn,
+    .search-btn,
+    .next-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .menu-btn:hover,
+    .back-btn:hover,
+    .more-options-btn:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .app-title,
+    .route-title {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      color: #ffffff;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    /* Booking form styles */
+    .booking-form-container {
+      background: linear-gradient(90deg, rgba(0, 163, 255, 0.59) 0%, rgba(129, 143, 180, 0) 100%);
+      margin: 0 18px;
+      border-radius: 20px;
+      padding: 14px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .route-selection {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      margin: 10px 16px 20px 16px;
+    }
+
+    .route-indicators {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      margin-top: 15px;
+    }
+
+    .route-dot {
+      width: 14px;
+      height: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 6px;
+    }
+
+    .route-dot.active {
+      background-color: #fff400;
+    }
+
+    .route-line {
+      width: 1px;
+      height: 28px;
+      background-color: rgba(255, 255, 255, 0.5);
+      margin: 0 6px;
+    }
+
+    .stations-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .station-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .station-info {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .station-code {
+      background-color: #ffffff;
+      color: #000000;
+      font-size: 10px;
+      font-weight: 600;
+      line-height: 15px;
+      padding: 6px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .station-code-text {
+      background-color: #ffffff;
+      color: #000000;
+      font-size: 10px;
+      font-weight: 600;
+      line-height: 15px;
+      padding: 4px;
+      border-radius: 10px;
+    }
+
+    .station-name {
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 20px;
+      color: #ffffff;
+    }
+
+    .route-divider {
+      width: 100%;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .find-trains-btn {
+      background-color: #03c03c;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 23px;
+      padding: 10px 34px;
+      border: none;
+      border-radius: 20px;
+      width: calc(100% - 44px);
+      margin: 0 22px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .find-trains-btn:hover {
+      background-color: #02a832;
+    }
+
+    /* Search sections */
+    .search-sections {
+      padding: 0 18px 74px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 34px;
+    }
+
+    .search-section {
+      display: flex;
+      flex-direction: column;
+      gap: -6px;
+    }
+
+    .section-header {
+      margin-left: 20px;
+      margin-bottom: -6px;
+    }
+
+    .section-label {
+      background: linear-gradient(90deg, rgba(0, 163, 255, 0.99) 0%, rgba(129, 143, 180, 0) 100%);
+      color: #ffffff;
+      font-size: 10px;
+      font-weight: 600;
+      line-height: 15px;
+      padding: 0 12px 0 6px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .search-input-container {
+      background: linear-gradient(90deg, rgba(0, 163, 255, 0.59) 0%, rgba(129, 143, 180, 0) 100%);
+      border-radius: 20px;
+      padding: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .input-content {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex: 1;
+      padding-left: 4px;
+    }
+
+    .search-input {
+      background: none;
+      border: none;
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 21px;
+      flex: 1;
+      outline: none;
+    }
+
+    .search-input::placeholder {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    /* Recent searches */
+    .recent-searches {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .recent-item {
+      background: linear-gradient(90deg, rgba(0, 163, 255, 0.59) 0%, rgba(129, 143, 180, 0) 100%);
+      border-radius: 20px;
+      padding: 12px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      position: relative;
+    }
+
+    .recent-text {
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 20px;
+      color: #ffffff;
+      margin-left: 8px;
+    }
+
+    /* Route screen styles */
+    .route-map-container {
+      padding: 0 28px 108px 3px;
+    }
+
+    .map-background {
+      position: relative;
+      width: 100%;
+      height: 538px;
+      border-radius: 30px;
+      overflow: hidden;
+    }
+
+    .kerala-map {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 30px;
+    }
+
+    .route-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .route-lines {
+      position: absolute;
+      width: 74px;
+      height: 210px;
+      left: 70px;
+      top: 17px;
+      border-radius: 30px;
+    }
+
+    .station-markers {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .station-marker {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .marker-dot {
+      width: 22px;
+      height: 24px;
+      background-color: #00b2ff;
+      border-radius: 12px;
+      box-shadow: 0px 4px 7px rgba(136, 136, 136, 1);
+    }
+
+    .marker-label {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      color: #ffffff;
+      white-space: nowrap;
+    }
+
+    .shoranur {
+      top: 0;
+      right: 50px;
+      justify-content: flex-end;
+    }
+
+    .thrissur {
+      top: 90px;
+      left: 0;
+      justify-content: flex-start;
+    }
+
+    .chalakkudy {
+      top: 142px;
+      right: 22px;
+      justify-content: flex-end;
+    }
+
+    .aluva {
+      bottom: 27px;
+      left: 66px;
+      justify-content: flex-start;
+    }
+
+    /* Interactive states */
+    button:hover {
+      opacity: 0.8;
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    .search-input:focus {
+      color: #ffffff;
+    }
+
+    /* Responsive media queries */
+    @media (min-width: 640px) {
+      .mobile-screens-container {
+        flex-direction: row;
+        gap: 32px;
+        justify-content: center;
+      }
+
+      .booking-screen,
+      .route-screen {
+        max-width: 470px;
+      }
+
+      .app-title,
+      .route-title {
+        font-size: 22px;
+      }
+
+      .search-sections {
+        gap: 40px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      body {
+        padding: 24px;
+      }
+
+      .mobile-screens-container {
+        gap: 48px;
+      }
+
+      .app-header {
+        padding: 32px 24px;
+      }
+
+      .booking-form-container {
+        margin: 0 24px;
+        padding: 20px;
+      }
+
+      .search-sections {
+        padding: 0 24px 80px 24px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .mobile-screens-container {
+        gap: 64px;
+      }
+
+      .booking-screen,
+      .route-screen {
+        max-width: 520px;
+      }
+    }
+  </style>
+</body>
+</html>
